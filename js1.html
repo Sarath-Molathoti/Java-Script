@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Practice</title>
+</head>
+<body bgcolor="aqua">
+     <center>
+	        <h1>Date & Time in Java Script</h1>
+	        <script>
+			var d=new Date();
+			var day=d.getDate();
+			var month=d.getMonth()+1;
+			var year=d.getFullYear();
+			document.write("Date : "+day+"/"+month+"/"+year);
+	        </script><br>
+			<span id="time"> </span>
+			<script>
+			function getTime(){
+			var d=new Date();
+			var h=d.getHours();
+			var m=d.getMinutes();
+			var s=d.getSeconds();
+			document.getElementById("time").innerHTML="Time : "+h+":"+m+":"+s;
+			setInterval("getTime()",1000);}
+			getTime();
+	        </script>
+	 </center>
+</body>
+</html>
